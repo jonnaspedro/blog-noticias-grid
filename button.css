@@ -1,0 +1,7 @@
+button{
+    width: 450px;
+    height: 50px;
+    background-color: rgb(255, 255, 255);
+    border: none;
+    font-family: inherit;
+}

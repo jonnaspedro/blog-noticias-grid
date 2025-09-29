@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="pt">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grid Layout</title>
+    <link rel="stylesheet" href="button.css">
+    <style>
+        body {
+            margin: 0;
+            font-family: sans-serif;
+            display: grid;
+            grid-template-areas:
+                "header header header"
+                "nav main aside"
+                "nav footer footer";
+            grid-template-columns: 1fr 2fr 1fr;
+            grid-template-rows: auto 1fr auto;
+            height: 50vh;
+        }
+
+        header {
+            grid-area: header;
+            background: #ffa8a8;
+            padding: 1em;
+            color: rgb(0, 0, 0);
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+        }
+
+        .logo {
+            display: flex;
+            align-items: center;
+        }
+
+        .logo img {
+            height: 60px;
+            margin-right: 10px;
+        }
+
+
+
+        nav {
+            grid-area: nav;
+            background: #ff8d8d;
+            padding: 1em;
+            display: flex;
+            gap: 15px;
+            flex-wrap: wrap;
+        }
+
+        main {
+            grid-area: main;
+            background: #FFFFFF;
+            padding: 1em;
+        }
+
+        aside {
+            grid-area: aside;
+            background: #ffffff;
+            padding: 5em;
+        }
+
+        footer {
+            grid-area: footer;
+            background: #ff0000;
+            padding: 1em;
+            color: rgb(255, 255, 255);
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+
+        <div class="logo">
+            <img src="imagens/logo (2).png" alt="Logo G1" style="height:50px;">
+            <h1 style="color:white; font-size: 25px; margin: 0;">O portal de Notícias da globo</h1>
+        </div>
+
+    </header>
+    <nav style="display: flex; flex-direction: column; gap: 30px; align-items: flex-start;">
+        <button style="width: 100%;">
+            <a href="index.html" style="display: block; width: 100%;">Início</a>
+        </button>
+        <button style="width: 100%;"> 
+            <a class="btn-sobre" href="https://www.gov.br/saude/pt-br/assuntos/saude-de-a-a-z/h/hipertensao" style="display: block; width: 100%;">Ministério da Saúde</a>
+        </button>
+        <button style="width: 100%;"> 
+             <a href="https://www.einstein.br/n/glossario-de-saude/hipertensao-arterial" style="display: block; width: 100%;">Notícias</a>
+        </button>
+        <button style="width: 100%;"> 
+             <a class="btn-grupo" href="https://g1.globo.com/" style="display: block; width: 100%;">Acesse o G1</a>
+        </button>
+    </nav>
+    <main>
+
+        <section class="hero">
+            <div class="texto" style="text-align: center;"></div>
+            <h1>Bem-vindo ao G1 Notícias!</h1>
+            <p>
+                Hoje falaremos sobre as principais causas da Hipertensão!
+            </p>
+            <p>
+                Hipertensão arterial
+            </p>
+            <p>
+                A hipertensão arterial ou pressão alta, é uma doença que ataca os vasos sangüíneos, coração, cérebro,
+                olhos e pode causar paralisação dos rins. Ocorre quando a medida da pressão se mantém freqüentemente
+                acima de 140 por 90 mmHg. Essa doença é herdada dos pais em 90% dos casos, mas há vários fatores que
+                influenciam nos níveis de pressão arterial, entre eles: </p>
+
+            <p>– fumo, consumo de bebidas alcoólicas, obesidade, estresse, grande consumo de sal, níveis altos
+                decolesterol, falta de atividade física; </p>
+            <p>– além desses fatores de risco, sabe-se que sua incidência é maior na raça negra, aumenta com a idade,
+                émaior entre homens com até 50 anos, entre mulheres acima de 50 anos, em diabéticos. </p>
+
+            <p> Sintomas: </p>
+
+            <p>Os sintomas da hipertensão costumam aparecer somente quando a pressão sobe muito: podem ocorrer dores
+                nopeito, dor de cabeça, tonturas, zumbido no ouvido, fraqueza, visão embaçada e sangramento nasal. </p>
+
+            <p>Diagnóstico: </p>
+
+            <p>Medir a pressão regularmente é a única maneira de diagnosticar a hipertensão. Pessoas acima de 20 anos
+                de idade devem medir a pressão ao menos umavez por ano. Se houver hipertensos na família, deve-se medir
+                no mínimo duas vezes por ano. </p>
+
+            <p>Prevenção e controle: </p>
+
+            <p>A pressão alta não tem cura, mas tem tratamento e pode ser controlada. Somente o médico poderá determinar
+                o
+                melhor método para cada paciente, mas além dos medicamentos disponíveis atualmente, é imprescindível
+                adotar
+                um estilo de vida saudável. </p>
+
+
+            <p>IMPORTANTE: Somente médicos e cirurgiões-dentistas devidamente habilitados podem diagnosticar doenças,
+                indicar tratamentos e receitar remédios. As informações disponíveis em Dicas em Saúde possuem apenas
+                caráter educativo. </p>
+
+            <p>Dica elaborada em abril de 2.004. </p>
+
+            <p>Fonte: Ministério da Saúde. Hipertensão: vida saudável o melhor remédio </p>
+
+            </div>
+        </section>
+
+
+    </main>
+    <aside>
+        <div class="Imagemhiper">
+            <img src="imagens/aside.png" alt="Hipertensão" style="height:600px;">
+        </div>
+    </aside>
+    <footer>
+        <section style="display: flex; justify-content: center; align-items: center; padding: 20px 0;">
+            <p style="color: #fff; margin: 0; font-weight: 700;">
+                © G1 Notícias - Todos os direitos reservados
+            </p>
+        </section>
+
+    </footer>
+</body>
+
+</html>
